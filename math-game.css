@@ -1,0 +1,247 @@
+/*stack overflow has reccomended me to start with zero padding and margin like this*/
+* {
+  padding: 0;
+  margin: 0;
+}
+body { /*background in red and text font for all text in the page*/
+  background: rgb(160, 0, 0);
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+#menu { /*Ensure all blocks and text are in the middle*/
+  text-align: center;
+  margin: 15px auto;
+  width: 350px;
+}
+hr { /*shifts words or block into a lower level (its invisible)*/
+  border-width: 0px;
+  margin: 5px;
+}
+#title { /*Title in the page (Both for main menu and in level menu)*/
+  font-size: 50px;
+  border: 7px; 
+  font-weight: bold;
+  border-style: solid;
+  border-color: rgb(10, 10, 10);
+  margin: 15px 5px;
+  padding: 0px 5px;
+}
+
+
+
+/*CSS STYLING FOR THE MAIN MENU*/
+#instructions {/*menu instructions for the user*/
+  font-size: 30px;
+  border: 5px; 
+  border-style: solid;
+  border-color: rgb(10, 10, 10);
+  color: black;
+  margin: 10px 10px;
+  padding: 5px;
+}
+#note { /*explains about the levels*/
+  font-size: 21px;
+  color: black;
+  Margin: 15px;
+}
+#level-button { /*white buttons to choose a level*/
+  font-size: 55px;
+  border: 4px; 
+  border-style: outset;
+  color: white;
+  padding: 5px 45px;
+  
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  
+}
+#level-button:active {/*button changes colour when its clicked*/
+  border-color: rgb(220, 220, 220);
+  color: rgb(220, 220, 220);
+}
+/*End OF MENU'S CSS STYLING FOR THE MAIN MENU*/
+
+
+
+
+
+/*CSS STYLING FOR LEVEL MENU*/
+/*Important information such as the instructions, timer, score and equation*/
+#instructions-level { /*instructions*/
+  font-size: 22px;
+  color: white;
+  margin-top: -5px;
+}
+#time { /*timer*/
+  font-size: 20px;
+  border: 3.5px; 
+  border-style: outset;
+  color: white;
+  padding: 10px;
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+#score { /*score archieved*/
+  font-size: 20px;
+  border: 3.5px; 
+  border-style: outset;
+  color: white;
+  padding: 10px;
+  float: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+#equation { /*the equation that needs to be solved by the user*/
+  font-size: 40px;
+  border: 7px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+
+  border-style: outset;
+  border-color: rgb(10, 10, 10);
+  border-radius: 3cm;
+  color: white;
+
+  width: 300px;
+  margin:auto;
+}
+
+/*Buttons at the bottom of the screen*/
+/*each option button will have to be separate in order to work with the javascript file*/
+#option1 {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-weight: bold;
+  border: 5px;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border-style: outset;
+  border-color: rgb(255, 255, 255);
+
+  font-size: 26.5px;
+  width: 74px;
+  height: 74px;
+  margin: 5px;
+  padding: 11px;
+  overflow: hidden;
+}
+#option2 {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-weight: bold;
+  border: 5px;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border-style: outset;
+  border-color: rgb(255, 255, 255);
+
+  font-size: 27px;
+  width: 74px;
+  height: 74px;
+  margin: 5px;
+  padding: 11px;
+  overflow: hidden;
+}
+#option3 {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-weight: bold;
+  border: 5px;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border-style: outset;
+  border-color: rgb(255, 255, 255);
+
+  font-size: 27px;
+  width: 74px;
+  height: 74px;
+  margin: 5px;
+  padding: 11px;
+  overflow: hidden;
+}
+#option4 {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-weight: bold;
+  border: 5px;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border-style: outset;
+  border-color: rgb(255, 255, 255);
+
+  font-size: 27px;
+  width: 74px;
+  height: 74px;
+  margin: 5px;
+  padding: 11px;
+  overflow: hidden;
+}
+
+/*when the user click on one the options, the color of the buttons will change to a darker white tone*/
+#option1:active {
+  border-color: rgb(220, 220, 220);
+  color: rgb(220, 220, 220);
+}
+#option2:active {
+  border-color: rgb(220, 220, 220);
+  color: rgb(220, 220, 220);
+}
+#option3:active {
+  border-color: rgb(220, 220, 220);
+  color: rgb(220, 220, 220);
+}
+#option4:active {
+  border-color: rgb(220, 220, 220);
+  color: rgb(220, 220, 220);
+}
+
+/*option buttons when they are disabled, slightly darker*/
+#option1:disabled {
+  border-color: rgb(210, 210, 210);
+  color: rgb(210, 210, 210);
+}
+#option2:disabled {
+  border-color: rgb(210, 210, 210);
+  color: rgb(210, 210, 210);
+}
+#option3:disabled {
+  border-color: rgb(210, 210, 210);
+  color: rgb(210, 210, 210);
+}
+#option4:disabled {
+  border-color: rgb(210, 210, 210);
+  color: rgb(210, 210, 210);
+}
+
+/*next question button*/
+#next-question {
+  font-size: 45px;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-weight: bold;
+  border: 7px;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  border-style: outset;
+  border-color: rgb(10, 10, 10);
+
+  padding: 5px;
+  text-align: center;
+  width: 340px;
+}
+/*Finished (not a button)*/
+#Finished {
+  font-size: 45px;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-weight: bold;
+  border: 7px;
+  background-color: transparent;
+  color: rgb(10, 10, 10);
+  border-style: outset;
+  border-color: rgb(10, 10, 10);
+
+  margin: 5px auto;
+  padding: 5px 0;
+  text-align: center;
+  width: 325px;
+}
+/*END OF LEVEL MENU CSS STYLING*/
